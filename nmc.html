@@ -1,162 +1,423 @@
-<HTML>
-<head>
-  <title>Kyle Helsing's NMI Portfolio</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <link rel="shortcut icon" href="src/k_logo.png" />
-  <style>
-    .card {
-      width: 40rem;
-      margin-right: auto;
-      margin-left: auto;
-      margin-top: auto;
-      text-align: left;
-      margin-bottom: 1em;
-    }
-    #footer {
-      width: 40rem;
-      margin-right: auto;
-      margin-left: auto;
-      margin-top: 0;
-      margin-bottom: 0;
-      text-align: center;
-      padding-top: 0;
-      margin-bottom: 1em;
-    }
-    body, html {
-      height: 100%;
-    }
-    .bg {
-      background-image: linear-gradient(#7395AE, #6F2232);
-      padding-top: 1em;
-    }
-    br {
-      display: block;
-      content: "";
-      height: 1rem;
-    }
-    img {
-      height: 20px;
-      width: 15px;
-      margin-top: 5px;
-    }
-    #k {
-      height: 13px;
-      width: 13px;
-
-    }
-    #business-card {
-      height: 200px;
-      width: 350px;
-      margin-bottom: 5px;
-    }
-
-  </style>
-
-</head>
-<body>
-  <div class="bg">
-    <div class="card">
-      <div class="card-header">
-        <h5>My NMIX Journey</h5>
-      </div>
-      <div class="card-body">
-        <h6 class="card-subtitle mb-2 text-muted">Kyle Helsing</h6>
-        <p class="card-text">I chose to pursue the New Media Certificate because I felt it would be very beneficial to my degree as well as my professional development. <br>Being a computer science major, I was able to take the dev route and jump right in with Rich Media Production. This was the class that initially put my eyes on NMIX as I was very interested in getting my feet wet with iOS development. I thoroughly enjoyed the class and went on to use some of my acquired skills at my internship with Chick-Fil-A Corporate over the summer. <br>After 4310, I went on to take Digital Brown Bag where I was able to learn vital skills for both the workplace and adult life. Some of my big take-aways from that class include creating my own business card, understanding my credit score, and forming a new iteration of my resume. I am very excited for the next step in my journey: NMI Capstone.</p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header">
-        <h5>NMIX 4310: Rich Media Production</h5>
-      </div>
-      <div class="card-body">
-        <h6 class="card-subtitle mb-2 text-muted">Summary:</h6>
-        <p class="card-text">Rich Media Production was my introduction into the New Media Institute. This class focuses on application development, with an emphasis on iOS development. <br>Having a history in software development benefitted me heavily in this course in terms of understanding object-oriented programming. We started semester learning Swift, but quickly switched over to SwiftUI upon release. Making the switch was tough, but very useful as SwiftUI had tons of added functionality including a live, interactive view of your application during development. <br>For my final project, I developed a weather app that used the DarkSky API to gather weather information. It then rendered this data into a list view as well as an individualized city view. Below is the demo for this project:</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/vNTUCtOWSvk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header">
-        <h5>CSCI 4050: Software Engineering</h5>
-      </div>
-      <div class="card-body">
-        <h6 class="card-subtitle mb-2 text-muted">Summary:</h6>
-        <p class="card-text">Software Engineering is a computer science class that is being used as an elective for the NMIX certificate. This class explores the software design and lifecycle process through a semester long project. <br>Starting with eliciting project requirements, we walked through generating design documents and analyzing tools that would help with implementation. This class also explores system requirements and different kinds of system architecture including MVC. <br>Our term project was to create an online bookstore where users can create and manage accounts, have dynamic shopping carts, and continue through the checkout process. This was accomplished through a bootstrap front-end paired with a python backend with associated database for storage of persistent data. Some screenshots of our website are shown below:
-        </p>
-        <div id="carousel" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel" data-slide-to="1"></li>
-            <li data-target="#carousel" data-slide-to="2"></li>
-            <li data-target="#carousel" data-slide-to="3"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100 h-50" src="src/SWE_1.png" alt="First slide">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>NMI Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/img/nmi.png" alt="..." /></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#journey">Journey</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100 h-50" src="src/SWE_2.png" alt="Second slide">
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Welcome To My NMI Portfolio!</div>
+                <div class="masthead-heading text-uppercase">Feel Free to Look Around!</div>
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#journey">Show Me More</a>
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100 h-50" src="src/SWE_3.png" alt="Third slide">
+        </header>
+        <!-- Journey-->
+        <section class="page-section" id="journey">
+            <div class="container" align="center">
+                <div class="text-center" style="width: 75%">
+                    <h2 class="section-heading text-uppercase">My NMI Journey</h2>
+                    <h3 class="section-subheading text-muted">I chose to pursue the New Media Certificate because I felt it would be very beneficial to my degree as well as my professional development.
+                    <br><br>
+                    Being a computer science major, I was able to take the dev route and jump right in with Rich Media Production. This was the class that initially put my eyes on NMIX as I was very interested in getting my feet wet with iOS development. I thoroughly enjoyed the class and went on to use some of my acquired skills at my internship with Chick-Fil-A Corporate over the summer.
+                    <br><br>
+                    After 4310, I went on to take Digital Brown Bag where I was able to learn vital skills for both the workplace and adult life. Some of my big take-aways from that class include creating my own business card, understanding my credit score, and forming a new iteration of my resume. As my final course with NMI, I took New Media Capstone and paired with a campus client to deliver a web application for displaying pieces from the Special Collections Library at UGA.</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-mobile fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Apple App Development</h4>
+                        <p class="text-muted">During Rich Media Production, I was introduced to event-driven production though Swift development on the iOS platform.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-secondary"></i>
+                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Full Stack Development</h4>
+                        <p class="text-muted">Throughout my electives and Capstone classes, I gained experience working with full stack web applications.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-address-card fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Professionalism</h4>
+                        <p class="text-muted">In my Digital Brown Bag course, I learned about many professional topics such as communication, personal branding, credit scores, and benefits plans.</p>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100 h-50" src="src/SWE_4.png" alt="Fourth slide">
+        </section>
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Portfolio</h2>
+                    <h3 class="section-subheading text-muted">This is a collection of useful courses I have taken throughout my New Media Institute Journey.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <div style="width:355px; height:300px; background-image: url('assets/img/portfolio/rich/1.png'); background-size: cover; background-repeat: no-repeat;">
+                                </div>
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Rich Media Production</div>
+                                <div class="portfolio-caption-subheading text-muted">NMIX 4310</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <div style="width:355px; height:300px; background-image: url('assets/img/portfolio/swe/SWE_1.png'); background-size: cover; background-repeat: no-repeat;">
+                                </div>
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Software Engineering</div>
+                                <div class="portfolio-caption-subheading text-muted">CSCI 4050</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <div style="width:355px; height:300px; background-image: url('assets/img/portfolio/bb/business_card.png'); background-size: cover; background-repeat: no-repeat;">
+                                </div>
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Digital Brown Bag</div>
+                                <div class="portfolio-caption-subheading text-muted">NMIX 4220</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <div style="width:355px; height:300px; background-image: url('assets/img/portfolio/mobile/1.png'); background-size: cover; background-repeat: no-repeat;">
+                                </div>
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Mobile Development</div>
+                                <div class="portfolio-caption-subheading text-muted">CSCI 4060</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <div style="width:355px; height:300px; background-image: url('assets/img/data/1.png'); background-size: cover; background-repeat: no-repeat;">
+                                </div>
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Database Management</div>
+                                <div class="portfolio-caption-subheading text-muted">CSCI 4370</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <div style="width:355px; height:300px; background-image: url('assets/img/portfolio/capstone/1.png'); background-size: cover; background-repeat: no-repeat;">
+                                </div>
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">New Media Capstone</div>
+                                <div class="portfolio-caption-subheading text-muted">NMIX 4510</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+        </section>
+        <!-- About-->
+        <section class="page-section bg-light" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">A little about me...</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="Kyle Helsing Headshot" />
+                            <h4>Kyle Helsing</h4>
+                            <p class="text-muted">Software Engineer</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://github.com/kylehelsing"><i class="fab fa-github"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="mailto:kylehelsing@gmail.com"><i class="fab fa-google"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/kylehelsing/"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Post gradutation from The University of Georgia with a B.S. in Computer Science, I will be joining Chick-Fil-A Inc. in Atlanta as a Software Engineer II.</p></div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Modals-->
+        <!-- Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Rich Media Production</h2>
+                                    <p>Rich Media Production was my introduction into the New Media Institute. This class focuses on application development, with an emphasis on iOS development. <br>Having a history in software development benefitted me heavily in this course in terms of understanding object-oriented programming. We started semester learning Swift, but quickly switched over to SwiftUI upon release. Making the switch was tough, but very useful as SwiftUI had tons of added functionality including a live, interactive view of your application during development. <br>For my final project, I developed a weather app that used the DarkSky API to gather weather information. It then rendered this data into a list view as well as an individualized city view. Below is the demo for this project:</p>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vNTUCtOWSvk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <ul class="list-inline">
+                                        <li>Date: Spring 2019</li>
+                                        <li>Program: New Media Institute</li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header">
-        <h5>NMIX 4220: Digital Brown Bag</h5>
-      </div>
-      <div class="card-body">
-        <h6 class="card-subtitle mb-2 text-muted">Summary:</h6>
-        <p class="card-text">Digital Brown Bag was my most recent NMIX class. While this class was seminar based, it had a very large impact on me. My whole academic career has been about how to do the job; This was the first class that discussed everything AROUND the job. <br>Learning how to manage my credit score and determining my benefits are skills that I would have gone into adulthood not knowing had it not been for this class. Hearing from each speaker gave me a fresh perspective about the different career options available to me, and how to chase after them! <br>Every assignment in this class was focused on ME and MY career development. Below are my critiqued resume and business card from NMIX 4220/4221: </p>
-        <span>
-          <img src="src/business_card.png" id="business-card">
-          <object data="src/Resume.pdf" type="application/pdf" width="300px" height="387px">
-            <p>It appears you don't have a PDF plugin for this browser.
-              No biggie... you can <a href="Resume.pdf">click here to
-              download the PDF file.</a></p>
-          </object>
-      </span>
-      </div>
-    </div>
-    <div class="card" id="footer">
-      <div class="card-body">
-        <a href="index.html" class="btn btn-social-icon">
-          <img id="k" src="src/k_logo.png"></img>
-        </a>
-        <a href="https://github.com/kylehelsing" class="btn btn-social-icon btn-github">
-          <span class="fa fa-github"></span>
-        </a>
-        <a href="https://www.linkedin.com/in/kyle-helsing-38b704126/" class="btn btn-social-icon btn-linkedin">
-          <span class="fa fa-linkedin"></span>
-        </a>
-        <a href="mailto:kylehelsing@gmail.com" class="btn btn-social-icon btn-google">
-          <span class="fa fa-google"></span>
-        </a>
-        <a href="nmc.html" class="btn btn-social-icon">
-          <span><img src="src/nmi_logo.png"></img></span>
-        </a>
-      </div>
-    </div>
-    <br>
-  </div>
-
-
-</body>
-</HTML>
+        <!-- Modal 2-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Software Engineering</h2>
+                                    <p>Software Engineering is a computer science class that is being used as an elective for the NMIX certificate. This class explores the software design and lifecycle process through a semester long project. <br>Starting with eliciting project requirements, we walked through generating design documents and analyzing tools that would help with implementation. This class also explores system requirements and different kinds of system architecture including MVC. <br>Our term project was to create an online bookstore where users can create and manage accounts, have dynamic shopping carts, and continue through the checkout process. This was accomplished through a bootstrap front-end paired with a python backend with associated database for storage of persistent data. Some screenshots of our website are shown below:</p>
+                                    <div id="carousel" class="carousel slide" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel" data-slide-to="1"></li>
+                                            <li data-target="#carousel" data-slide-to="2"></li>
+                                            <li data-target="#carousel" data-slide-to="3"></li>
+                                        </ol>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="d-block w-100 h-50" src="assets/img/portfolio/swe/SWE_1.png" alt="First slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100 h-50" src="assets/img/portfolio/swe/SWE_2.png" alt="Second slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100 h-50" src="assets/img/portfolio/swe/SWE_3.png" alt="Third slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100 h-50" src="assets/img/portfolio/swe/SWE_4.png" alt="Fourth slide">
+                                            </div>
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                    <ul class="list-inline">
+                                        <li>Date: Spring 2020</li>
+                                        <li>Program: Computer Science</li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 3-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Digital Brown Bag</h2>
+                                    <p>Digital Brown Bag was a course focused on professional development. While this class was seminar based, it had a very large impact on me. My whole academic career has been about how to do the job; This was the first class that discussed everything AROUND the job. <br>Learning how to manage my credit score and determining my benefits are skills that I would have gone into adulthood not knowing had it not been for this class. Hearing from each speaker gave me a fresh perspective about the different career options available to me, and how to chase after them! <br>Every assignment in this class was focused on ME and MY career development. Below are my critiqued resume and business card from NMIX 4220/4221:</p>
+                                    <span>
+                                        <img src="assets/img/portfolio/bb/business_card.png" id="business-card" style="width: 500px; height: auto;">
+                                        <object data="assets/img/portfolio/bb/Resume.pdf" type="application/pdf" width="500px" height="700px">
+                                            <p>It appears you don't have a PDF plugin for this browser. No biggie... you can <a href="Resume.pdf">click here todownload the PDF file.</a></p>
+                                        </object>
+                                    </span>
+                                    <ul class="list-inline">
+                                        <li>Date: Fall 2019</li>
+                                        <li>Program: New Media Institute</li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Mobile Software Development</h2>
+                                    <p>Mobile Software Development is another CS class that I am using as an elective for the NMI program. While rich media production focuses on iOS development, this class focuses on Android development.<br> It was a huge bonus to have worked with apps in past as it made this class easier to understand from the outset as event-driven development is not something taught through traditional classes. Throughout this course we learned about many mobile design principles and how they differ from web development. One of the main differences being the access to peripherals and lack of memory that exist on mobile devices.<br> This class, paired with Rich Media production, has given me a well-rounded experience with developing apps for mobile devices. You can view my final project demo for Mobile Software Development below: </p>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=gp7If84wJwI&ab_channel=KyleHelsing" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <ul class="list-inline">
+                                        <li>Date: Spring 2021</li>
+                                        <li>Program: Computer Science</li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 5-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Database Management</h2>
+                                    <p>Database Management, while not a required course, is a class I like to include in this portfolio as it heavily impacts my work in other courses listed. This course focuses on the intricate details of creating and maintaining relational databases.<br>This class covers topics from creating a schema that matches a real world need all the way to writing effecient queries to access your objects. This class heavily aided me in my capstone project this semster as we created a database to store persistent data on our site. This class introduced me to concepts like table relations and how to store non-typed data indirectly with a database.<br>This class was easily one of the hardest I've taken as we delved into the relational algebra that drives the databases, but ultimately proved to pave the ground that allowed me to accel in future classes.</p>
+                                    <ul class="list-inline">
+                                        <li>Date: Fall 2020</li>
+                                        <li>Program: Computer Science</li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 6-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">New Media Capstone</h2>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/capstone/2.gif" alt="..." />
+                                    <p>This semester, I was enrolled in the New Media Capstone course. This is a course where you pair with a client and deliver an impressive technical project by the end of the semester.<br>This class was by far one of the most comprehensive classses I have taken in my college career. Our group was paired with clients from the Historic Clothing and Textile Collection and tasked with finding a solution to inaccessibility of the collection during the covid-19 pandemic.<br>To accomplish this, we digitized many of their items and created a modern website to house them. With the ability for the client to edit and add new content to the platform, the website really caters to what the client wants to make it. The site features a full digital colleciton as well as specific exhibits featuring themed pieces.<br>Another way we wanted to showcase these pieces was to take 3D image scans of select items and make them accessible in an interactive way. We accomplished this and made the items viewable on both desktop and mobile. On iPhone, users have the added integration with ARKit that allows them to view these models in a realized setting. You can visit both our project details website as well as our production site itself by following the links below:</p>
+                                    <ul class="list-inline">
+                                        <li>Date: Spring 2021</li>
+                                        <li>Client: Historic Clothing and Textile Collection</li>
+                                        <li>Project Details Website: <a href="http://projects.mynmi.net/21s/hctconline/">projects.mynmi.net/21s/hctconline/</a></li>
+                                        <li>Production Website: <a href="https://ugahctc.org">ugahctc.org</a></li>
+                                        <li>Program: New Media Institute</li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        <!-- Contact form JS-->
+        <script src="assets/mail/jqBootstrapValidation.js"></script>
+        <script src="assets/mail/contact_me.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
